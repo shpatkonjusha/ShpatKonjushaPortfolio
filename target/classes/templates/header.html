@@ -1,0 +1,26 @@
+<div class="header" th:fragment="header">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" th:class="${pageTitle == 'Home'} ? 'active' : 'nav-link'" th:href="@{/}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:class="${pageTitle == 'About'} ? 'active' : 'nav-link'"th:href="@{/about}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:class="${pageTitle == 'Experience'} ? 'active' : 'nav-link'" th:href="@{/experience}">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:class="${pageTitle == 'Contact'} ? 'active' : 'nav-link'" th:href="@{/contact}">Contact</a>
+                    </li>
+                </ul>
+                <a href="/download/cv" class="btn btn-outline-dark" role="button">Download Resume</a>
+            </div>
+        </div>
+    </nav>
+</div>

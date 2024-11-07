@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+    <title th:text="${pageTitle}">About Me</title>
+</head>
+<body>
+<div th:insert="layout :: layout(${pageTitle}, ~{::section})">
+    <section>
+            <div class="about_title">
+                <h5>Get To Know</h5>
+                <h2>About Me</h2>
+            </div>
+            <div class="container about_container">
+                <div class="about_me">
+                    <div class="about_me-image">
+                        <img th:src="@{/images/shpat.jpg}" alt="me" />
+                    </div>
+                </div>
+                <div class="about_content">
+                    <div class="about_cards">
+                        <article class="about_card">
+                            <i class="fa fa-award about_icon"></i>
+                            <h5>Experience</h5>
+                            <small>5 years studying</small>
+                        </article>
+                        <article class="about_card">
+                            <i class="ri ri-file-code-fill about_icon"></i>
+                            <h5>Project</h5>
+                            <small>10+ completed</small>
+                        </article>
+                    </div>
+                    <p>
+                        Enthusiastic and dedicated “Cacttus Education” student  with a four-year education in “Digital School” and a strong passion for coding.
+                        Eager to kickstart a career in software development, I am committed to leveraging my technical skills and knowledge to contribute to
+                        innovative projects and drive excellence in the field.
+                    </p>
+                    <a class="btn btn-primary" th:href="@{/contact}">Let's Talk</a>
+
+                </div>
+            </div>
+
+    </section>
+</div>
+</body>
+</html>

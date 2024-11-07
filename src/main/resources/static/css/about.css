@@ -1,0 +1,126 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+.about_title{
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.about_me{
+    margin-top: 50px;
+}
+
+.about_me, .about_me-image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 32px;
+    background: linear-gradient(
+            45deg,
+            transparent,
+            var(--color-primary),
+            transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about_me-image{
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about_me-image:hover{
+
+    transform: rotate(0);
+}
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+;
+}
+
+.about_card{
+    background-color: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-bg-variant);
+}
+
+.about_icon{
+    color: var(--color-primary);
+    font-size: 22.5px;
+    margin: 16px;
+}
+
+.about_card h5{
+    font-size: 15px;
+}
+
+.about_card small{
+    font-size: 11px;
+    color: var(--color-light);
+}
+
+.about_content p{
+    margin: 32px 0 42PX;
+    color: var(--color-light);
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_me{
+        width: 50%;
+        margin: 32PX auto 64PX;
+    }
+
+
+
+    .about_content p{
+        margin: 16px 0 24px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+    .about_me{
+        width: 65%;
+        margin: 0 auto 48px;
+
+    }
+
+    .about_cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about_content{
+        text-align: center;
+    }
+    .about_content p{
+        margin: 24px 0;
+    }
+}
+

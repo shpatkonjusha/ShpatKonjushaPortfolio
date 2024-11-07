@@ -1,0 +1,33 @@
+footer {
+    background: var(--color-primary);
+    padding: 48px 0;
+    text-align: center;
+    font-size: 14.4px;
+    margin:  200px 0px 0px ;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+.footer_logo {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 28px;
+}
+@media screen and (max-width: 600px) {
+    .footer_nav {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+

@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/contact.css}">
+<div th:insert="layout :: layout(${pageTitle},~{::section})">
+    <section>
+            <h5>Get In Touch</h5>
+            <h2>Contact Me</h2>
+            <div class="container contact_container">
+                <div class="contact_options">
+                    <article class="contact_option">
+                        <h4>Email</h4>
+                        <h5>shpatkonjusha@gmail.com</h5>
+                        <a href="mailto:shpat.konjusha@gmail.com">Send a message</a>
+                    </article>
+                    <article class="contact_option">
+                        <h4>Messenger</h4>
+                        <h5>shpatkonjusha</h5>
+                        <a href="https://m.me/shpat.konjusha/" target="_blank" rel="noopener noreferrer">Send a message</a>
+                    </article>
+                    <article class="contact_option">
+                        <h4>WhatsApp</h4>
+                        <h5>+383 45 426 868</h5>
+                        <a href="https://api.whatsapp.com/send?phone=38345426868" target="_blank" rel="noopener noreferrer">Send a message</a>
+                    </article>
+                    <article class="contact_option">
+                        <h4>LinkedIn</h4>
+                        <h5>shpat-konjusha</h5>
+                        <a href="https://www.linkedin.com/in/shpat-konjusha" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+                    </article>
+
+                </div>
+                <form >
+                    <label for="name">Your Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Full Name" required/>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required />
+
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="7" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+    </section>
+</div>

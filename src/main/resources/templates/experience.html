@@ -1,0 +1,103 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/experience.css}">
+</head>
+<body>
+<div th:insert="layout :: layout(${pageTitle}, ~{::section})">
+    <section>
+        <h5>What Skills I Have</h5>
+        <h2>My Experience</h2>
+
+        <div class="container experience_container">
+            <div class="experience_frontend">
+                <h3>Frontend Development</h3>
+                <div class="experience_content">
+                    <article class="experience_details">
+                        <AiFillHtml5 class="experience_details-icon"/>
+                        <div>
+                            <h4>HTML</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+
+                    <article class="experience_details">
+                        <DiCss3 class="experience_details-icon"/>
+                        <div>
+                            <h4>CSS</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+
+                    <article class="experience_details">
+                        <DiJavascript class="experience_details-icon"/>
+                        <div>
+                            <h4>JavaScript</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+
+                    <article class="experience_details">
+                        <DiBootstrap class="experience_details-icon"/>
+                        <div>
+                            <h4>Bootstrap</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+
+                    <article class="experience_details">
+                        <DiReact class="experience_details-icon"/>
+                        <div>
+                            <h4>VueJS</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="experience_backend">
+                <h3>Backend Development</h3>
+                <div class="experience_content">
+                    <article class="experience_details">
+                        <SiPhp class="experience_details-icon"/>
+                        <div>
+                            <h4>PHP</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+
+                    <article class="experience_details">
+                        <SiMysql class="experience_details-icon"/>
+                        <div>
+                            <h4>MySQL</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+
+                    <article class="experience_details">
+                        <DiJava class="experience_details-icon"/>
+                        <div>
+                            <h4>JAVA</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <DiJava class="experience_details-icon"/>
+                        <div>
+                            <h4>Spring Boot</h4>
+                            <small>Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <DiJava class="experience_details-icon"/>
+                        <div>
+                            <h4>Kotlin</h4>
+                            <small>Basic</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

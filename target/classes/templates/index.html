@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/index.css}">
+<div th:insert="layout :: layout(${pageTitle},~{::section})">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title">
+                        <h1>Hello!</h1>
+                    </div>
+                    <div class="description">
+                        <h4>
+                            I'm Shpat Konjusha, a passionate Software Developer studying at Cacttus Education. Driven by curiosity and a commitment to excellence, I enjoy transforming innovative ideas into impactful software solutions.
+
+                        </h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/shpat.jpg" alt="developer">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
